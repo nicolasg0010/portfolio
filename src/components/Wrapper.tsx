@@ -3,5 +3,9 @@ type Props = {
 };
 
 export default function Wrapper({ children }: Props) {
-  return <div className="border-2 min-h-screen flex flex-col lg:flex-row">{children}</div>;
+  return (
+    <div className="bg-lightBg font-robotoSlab text-md min-h-screen flex flex-col lg:flex-row max-h-screen">
+      {children}
+    </div>
+  );
 }
